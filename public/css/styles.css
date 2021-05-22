@@ -4,14 +4,13 @@
 }
 
 body{
-    /* align-items: center;  Need to check */
+    align-items: center;
     background-color: #f3f2ef;
     display: flex;
     flex-direction: column;
 }
 
 /* Header */
-
 .header_left img{
     object-fit: contain;
     height: 40px;
@@ -78,10 +77,9 @@ body{
 }
 
 /* Body */
-
 .app_body{
     display: flex;
-    margin-top: 35px;
+    margin-top: 40px;
     max-width: 1200px;
     margin-left: 20px;
     margin-right: 20px;
@@ -260,12 +258,18 @@ body{
     margin: 0 20px;
 }
 
+.feed hr{
+    border: 0.5px solid lightgray;
+    margin: 15px 5px;
+}
+
 .feed_inputContainer{
     background-color: white;
+    border: 1px solid lightgray;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .feed_input{
@@ -303,9 +307,9 @@ body{
     align-items: center;
     color: grey;
     cursor: pointer;
-    display: flex;
-    margin-top: 15px;
-    padding: 10px;
+    display: flex;    
+    margin-top: 5px;
+    padding: 5px;
 }
 
 .inputOptions:hover{
@@ -320,6 +324,7 @@ body{
 /* Post Section */
 .post{
     background-color: white;
+    border: 1px solid lightgray;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
@@ -360,6 +365,7 @@ body{
     border-radius: 10px;
     flex: 0.2;
     height: fit-content;
+    padding: 5px;
     padding-bottom: 10px;
     position: sticky;
     top: 80px;
