@@ -114,12 +114,12 @@ body{
     font-size: 75px;
 }
 
-.sidebar_top h5{
+.sidebar_top h2{
     font-size: 17px;
     font-weight: bold;
 }
 
-.sidebar_top h6{
+.sidebar_top h4{
     font-weight: lighter;
 }
 
