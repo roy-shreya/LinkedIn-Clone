@@ -8,6 +8,8 @@
 
     <!-- Google fonts for icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
 
     <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
@@ -82,47 +84,216 @@
             <div class="sidebar_top">
                 <img src="images/background.png" alt="" srcset="">
                 <i class="material-icons sidebar_avatar">account_circle</i>
+                <!-- check h2/h4 to h5/h6 -->
                 <h2>Shreya Roy</h2>
                 <h4>shreya.roy.blr@gmail.com</h4>
             </div>
 
             <div class="sidebar_stats">
-                <div class="p1">
-                    <p>Who viewed your profile</p>
-                    <p class="pno">XX</p>
+                <div class="sidebar_stat">
+                    <p>Who viewed you</p>
+                    <p class="sidebar_statNumber">2564</p>
                 </div>
-                <div class="p1">
-                    <p>Views of your posts</p>
-                    <p class="pno">XX</p>
+                <div class="sidebar_stat">
+                    <p>Views on post</p>
+                    <p class="sidebar_statNumber">254</p>
                 </div>
             </div>
 
-            <div class="down">
+            <div class="sidebar_bottom">
                 <p>Recents</p>
-                <div class="down_recents"> 
-                        <a href="">Groups</a>
+                <div class="sidebar_recentItems"> 
+                    <span class="sidebar_hash">#</span>
+                    <p>reactjs</p>
+                </div>
+                <div class="sidebar_recentItems"> 
+                    <span class="sidebar_hash">#</span>
+                    <p>programming</p>
+                </div>
+                <div class="sidebar_recentItems"> 
+                    <span class="sidebar_hash">#</span>
+                    <p>developer</p>
+                </div>
+                <!-- <a href="">Groups</a>
                     <div class="link">
                         <a href="">Events</a>
                         <i class="material-icons">add</i>
                     </div>
-                        <a href="">Followed Hashtags</a>
-                    </p>
-                </div>
-                
+                    <a href="">Followed Hashtags</a> -->
+            </div>
 
-            </div>
-            <div class="discover">
+            <!-- <div class="discover">
                 <p>Discover More</p>
-            </div>
+            </div> -->
             <!-- Side bar ending -->
         </div>
 
-        <div class="middle_sect">
+        <div class="feed">
+            <!-- Create Post -->
+            <div class="feed_inputContainer">
+                <!-- <i class="material-icons">account_circle</i> -->
+                <div class="feed_input">
+                    <i class="material-icons">create</i>
+                    <form action="">
+                        <input type="text" placeholder="Start a post">
+                        <button type="submit">Send</button>
+                     </form>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: #70b5f9;" >image</i>
+                        <h4>Photo</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: #e7a33e;">smart_display</i>
+                        <h4>Video</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: #c0cbcd;">event</i>
+                        <h4>Event</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: #7fc15e;">article</i>
+                        <h4>Write article</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post Section -->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons post_avatar">person</i>
+                    <div class="post_info">
+                        <h2>Name</h2>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message goes here</p>
+                </div>
+                <div class="post_button">
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">thumb_up</i> 
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">comment</i> 
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">reply</i> 
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: gray;">send</i> 
+                        <h4>Send</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons post_avatar">person</i>
+                    <div class="post_info">
+                        <h2>Name</h2>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message goes here</p>
+                </div>
+                <div class="post_button">
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">thumb_up</i> 
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">comment</i> 
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">reply</i> 
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: gray;">send</i> 
+                        <h4>Send</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons post_avatar">person</i>
+                    <div class="post_info">
+                        <h2>Name</h2>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message goes here</p>
+                </div>
+                <div class="post_button">
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">thumb_up</i> 
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">comment</i> 
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons-outlined" style="color: gray;">reply</i> 
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOptions">
+                        <i class="material-icons" style="color: gray;">send</i> 
+                        <h4>Send</h4>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <div class="right_sec">
-
+        <div class="widgets">
+            <div class="widgets_header">
+                <h2>LinkedIn News</h2>
+                <i class="material-icons" style="color: gray;">info</i>
+            </div>
+            <div class="widgets_article">
+                <div class="widgets_articleLeft">
+                    <i class="material-icons">radio_button_checked</i>
+                </div>
+                <div class="widgets_articleRight">
+                    <h4>Heading</h4>
+                    <p>Subtitle</p>
+                </div>               
+            </div>
+            <div class="widgets_article">
+                <div class="widgets_articleLeft">
+                    <i class="material-icons">radio_button_checked</i>
+                </div>
+                <div class="widgets_articleRight">
+                    <h4>Heading</h4>
+                    <p>Subtitle</p>
+                </div>               
+            </div>
+            <div class="widgets_article">
+                <div class="widgets_articleLeft">
+                    <i class="material-icons">radio_button_checked</i>
+                </div>
+                <div class="widgets_articleRight">
+                    <h4>Heading</h4>
+                    <p>Subtitle</p>
+                </div>               
+            </div>
+            <div class="widgets_article">
+                <div class="widgets_articleLeft">
+                    <i class="material-icons">radio_button_checked</i>
+                </div>
+                <div class="widgets_articleRight">
+                    <h4>Heading</h4>
+                    <p>Subtitle</p>
+                </div>               
+            </div>
         </div>
     </div>
 </body>

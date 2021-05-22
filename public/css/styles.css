@@ -4,10 +4,13 @@
 }
 
 body{
+    /* align-items: center;  Need to check */
     background-color: #f3f2ef;
     display: flex;
     flex-direction: column;
 }
+
+/* Header */
 
 .header_left img{
     object-fit: contain;
@@ -26,6 +29,7 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .header_left{
@@ -73,21 +77,37 @@ body{
     width: 20px;
 }
 
+/* Body */
+
 .app_body{
     display: flex;
-    margin-top: 20px;
+    margin-top: 35px;
     max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    /* margin-top: 20px;
     margin: 0 20px;
-    padding: 20px;
+    padding: 20px; */
 }
 
+/* Sidebar */
+
 .sidebar{
-    position: sticky;
-    top: 20px;
-    flex: 0.2;
     border-radius: 10px;
-    text-align: center;
+    flex: 0.2;
     height: fit-content;
+    position: sticky;
+    text-align: center;
+    top: 80px;
+    /* 
+    top: 20px; 
+     */
+}
+
+.sidebar_avatar{
+    font-size: 75px;
+    /* margin-bottom: 10px;  Need to check */
 }
 
 .sidebar_top{
@@ -95,79 +115,114 @@ body{
     flex-direction: column;
     align-items: center;
     border: 1px solid lightgrey;
+    border-bottom: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
-    margin-top: 10px;
+    padding-bottom: 10px;
+    /* margin-top: 10px; */
 }
 
 .sidebar_top img{
-    margin-bottom: -40px;
-    /* display: block; */
-    width: 100%;
-    height: 60px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-.sidebar_top i{
-    font-size: 75px;
+    margin-bottom: -40px;
+    height: 60px;
+    object-fit: cover;
+    width: 100%;
+    /* margin-bottom: -40px;    
+     */
 }
 
 .sidebar_top h2{
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 18px;
+    /* font-weight: bold; */
 }
 
 .sidebar_top h4{
-    font-weight: lighter;
+    color: grey;
+    font-size: 12px;
+    /* font-weight: lighter; */
+}
+
+.sidebar_stat{
+    /* color: grey; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .sidebar_stats{ 
-    margin-top: -1px;   
-    font-size: 13px;
-    padding: 10px;
     background-color: white;
     border: 1px solid lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-weight: 200;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* margin-top: -1px;   
+    font-size: 13px;    
+    font-weight: 200; */
 }
 
-.p1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.sidebar p{
     color: grey;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.pno{
-    display: flex;
-    color: blue;
+.sidebar_statNumber{
+    color: #0a66c2 !important;
+    font-weight: bold;
 }
 
-.down{
+.sidebar_bottom{
     background-color: white;
     border: 1px solid lightgray;
-    margin: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: left;
+    border-radius: 10px;
+    margin-top: 10px;
     padding: 10px;
+    text-align: left;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 
-.down p{
+/* Need to check - without align-items and line-height
+.sidebar_bottom p{    
+    font-size: 13px;  
+    padding-bottom: 10px;  
     align-items: flex-start;
-    font-size: 12px;    
     line-height: 7px;
+} */
+
+.sidebar_recentItems{
+    display: flex;
+    color: grey;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
-.down .link{
+.sidebar_recentItems:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar_hash{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+/* .sidebar_bottom .link{
     display: flex;
     justify-content: space-between;
 }
 
-.down_recents a{
+.sidebar_recentsItemscents a{
     font-size: 12px;
     font-weight: 600;
     padding-top: 10px;
@@ -175,7 +230,7 @@ body{
 }
 
 
-.down_recents i{
+.sidebar_recentsItemscents i{
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -196,4 +251,171 @@ body{
 .discover:hover{
     background-color: lightgray;
     cursor: pointer;
+} */
+
+
+/* Feed Section */
+.feed{
+    flex: 0.6;
+    margin: 0 20px;
+}
+
+.feed_inputContainer{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.feed_input{
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    color: grey;
+    display: flex;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.feed_input form{
+    display: flex;
+}
+
+.feed_input > form > input{
+    border: none;
+    flex: 1;
+    font-weight: 600;
+    margin-left: 10px;
+    outline-width: 0;
+    width: 100%;
+}
+
+.feed_input form button{
+    display: none;
+} 
+
+.feed_inputOptions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputOptions{
+    align-items: center;
+    color: grey;
+    cursor: pointer;
+    display: flex;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.inputOptions:hover{
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+.inputOptions h4{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+/* Post Section */
+.post{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post_header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post_avatar{
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.post_info p{
+    color: gray;
+    font-size: 12px;
+}
+
+.post_info h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+}
+.post_body{
+    overflow-wrap: anywhere;
+}
+.post_button{
+    display: flex;
+}
+
+/* Widgets Section */
+.widgets{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    flex: 0.2;
+    height: fit-content;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 80px;
+}
+
+.widgets_header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.widgets_header h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.widgets_header i{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.widgets_article{
+    align-items:flex-start;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+}
+
+.widgets_article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets_articleLeft{
+    font-size: 2px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.widgets_articleLeft i{
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.widgets_articleRight{
+    flex: 1;
+}
+
+.widgets_articleRight h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.widgets_articleRight p{
+    font-size: 12px;
+    color: gray;
 }
