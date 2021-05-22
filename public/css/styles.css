@@ -73,7 +73,7 @@ body{
     width: 20px;
 }
 
-.main_body{
+.app_body{
     display: flex;
     margin-top: 20px;
     max-width: 1200px;
@@ -81,7 +81,7 @@ body{
     padding: 20px;
 }
 
-.left_section{
+.sidebar{
     position: sticky;
     top: 20px;
     flex: 0.2;
@@ -90,7 +90,7 @@ body{
     height: fit-content;
 }
 
-.up{
+.sidebar_top{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +101,7 @@ body{
     margin-top: 10px;
 }
 
-.up img{
+.sidebar_top img{
     margin-bottom: -40px;
     /* display: block; */
     width: 100%;
@@ -110,16 +110,16 @@ body{
     border-top-left-radius: 10px;
 }
 
-.up i{
+.sidebar_top i{
     font-size: 75px;
 }
 
-.up h5{
+.sidebar_top h5{
     font-size: 17px;
     font-weight: bold;
 }
 
-.up h6{
+.sidebar_top h6{
     font-weight: lighter;
 }
 
