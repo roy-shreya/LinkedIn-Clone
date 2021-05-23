@@ -83,10 +83,6 @@ body{
     max-width: 1200px;
     margin-left: 20px;
     margin-right: 20px;
-    
-    /* margin-top: 20px;
-    margin: 0 20px;
-    padding: 20px; */
 }
 
 /* Sidebar */
@@ -98,14 +94,10 @@ body{
     position: sticky;
     text-align: center;
     top: 80px;
-    /* 
-    top: 20px; 
-     */
 }
 
 .sidebar_avatar{
-    font-size: 75px;
-    /* margin-bottom: 10px;  Need to check */
+    font-size: 75px; 
 }
 
 .sidebar_top{
@@ -118,7 +110,6 @@ body{
     border-top-right-radius: 10px;
     background-color: white;
     padding-bottom: 10px;
-    /* margin-top: 10px; */
 }
 
 .sidebar_top img{
@@ -128,23 +119,19 @@ body{
     height: 60px;
     object-fit: cover;
     width: 100%;
-    /* margin-bottom: -40px;    
-     */
 }
 
 .sidebar_top h2{
-    font-size: 18px;
-    /* font-weight: bold; */
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .sidebar_top h4{
     color: grey;
     font-size: 12px;
-    /* font-weight: lighter; */
 }
 
 .sidebar_stat{
-    /* color: grey; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -156,11 +143,7 @@ body{
     border: 1px solid lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    /* margin-top: -1px;   
-    font-size: 13px;    
-    font-weight: 200; */
+    padding: 0px 5px;
 }
 
 .sidebar p{
@@ -177,21 +160,17 @@ body{
 .sidebar_bottom{
     background-color: white;
     border: 1px solid lightgray;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-top: 10px;
-    padding: 10px;
-    text-align: left;
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+    padding: 5px 0px;
+    text-align: left;    
 }
 
-/* Need to check - without align-items and line-height
-.sidebar_bottom p{    
-    font-size: 13px;  
-    padding-bottom: 10px;  
-    align-items: flex-start;
-    line-height: 7px;
-} */
+.recent{
+    padding-left: 10px;
+    padding-top: 5px;
+}
 
 .sidebar_recentItems{
     display: flex;
@@ -215,42 +194,24 @@ body{
     margin-left: 5px;
 }
 
-/* .sidebar_bottom .link{
-    display: flex;
-    justify-content: space-between;
-}
-
-.sidebar_recentsItemscents a{
-    font-size: 12px;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.sidebar_recentsItemscents i{
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.discover{    
-    text-align: center;
+.sidebar_discover{  
+    align-items: center;
     background-color: white;
     border: 1px solid lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #435560;
+    font-size: 25px;
     margin-top: -1px;
-    font-size: 20px;
     padding: 10px;
+    padding-top: 20px;
+    width: 100%;
 }
 
-.discover:hover{
+.sidebar_discover:hover{
     background-color: lightgray;
     cursor: pointer;
-} */
-
+}
 
 /* Feed Section */
 .feed{
